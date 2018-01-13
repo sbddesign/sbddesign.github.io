@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/stephendelorme
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://d.elor.me
+  * I am stephendelorme (https://keybase.io/stephendelorme) on keybase.
+  * I have a public key ASD0fTewGqj7kRDx6OjR-Hv5IXNxyyNv3EYEgAd_ZktaRgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f47d37b01aa8fb9110f1e8e8d1f87bf9217371cb236fdc460480077f664b5a460a",
+      "host": "keybase.io",
+      "kid": "0120f47d37b01aa8fb9110f1e8e8d1f87bf9217371cb236fdc460480077f664b5a460a",
+      "uid": "187336346e6e0741df4261baeb173319",
+      "username": "stephendelorme"
+    },
+    "merkle_root": {
+      "ctime": 1515884652,
+      "hash": "fe558b5b7d6a461179afad8cafd31ffc242e9083430428ec3bd8c546b9b53fec6ec380745b6759245f0421aacb4c54005839e737d0ef233016cd8cdf74982250",
+      "hash_meta": "13e8c423d4721a96a822e997232a8b2730f8744f0b6ee29bfdee771ec5765b1f",
+      "seqno": 1924188
+    },
+    "service": {
+      "hostname": "d.elor.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515884644,
+  "expire_in": 504576000,
+  "prev": "d17f9dfc418279d9a1a1d510ddeacbe93ce8ec747a1eec800515144a7610e88f",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg9H03sBqo+5EQ8ejo0fh7+SFzccsjb9xGBIAHf2ZLWkYKp3BheWxvYWTFA0d7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZjQ3ZDM3YjAxYWE4ZmI5MTEwZjFlOGU4ZDFmODdiZjkyMTczNzFjYjIzNmZkYzQ2MDQ4MDA3N2Y2NjRiNWE0NjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZjQ3ZDM3YjAxYWE4ZmI5MTEwZjFlOGU4ZDFmODdiZjkyMTczNzFjYjIzNmZkYzQ2MDQ4MDA3N2Y2NjRiNWE0NjBhIiwidWlkIjoiMTg3MzM2MzQ2ZTZlMDc0MWRmNDI2MWJhZWIxNzMzMTkiLCJ1c2VybmFtZSI6InN0ZXBoZW5kZWxvcm1lIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTE1ODg0NjUyLCJoYXNoIjoiZmU1NThiNWI3ZDZhNDYxMTc5YWZhZDhjYWZkMzFmZmMyNDJlOTA4MzQzMDQyOGVjM2JkOGM1NDZiOWI1M2ZlYzZlYzM4MDc0NWI2NzU5MjQ1ZjA0MjFhYWNiNGM1NDAwNTgzOWU3MzdkMGVmMjMzMDE2Y2Q4Y2RmNzQ5ODIyNTAiLCJoYXNoX21ldGEiOiIxM2U4YzQyM2Q0NzIxYTk2YTgyMmU5OTcyMzJhOGIyNzMwZjg3NDRmMGI2ZWUyOWJmZGVlNzcxZWM1NzY1YjFmIiwic2Vxbm8iOjE5MjQxODh9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZC5lbG9yLm1lIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zOCJ9LCJjdGltZSI6MTUxNTg4NDY0NCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJkMTdmOWRmYzQxODI3OWQ5YTFhMWQ1MTBkZGVhY2JlOTNjZThlYzc0N2ExZWVjODAwNTE1MTQ0YTc2MTBlODhmIiwic2Vxbm8iOjE1LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQLh3+AE3lt3yYzHEt1/+NDfFej+HL1Ow+aI4OCl1Y6QYX7tdVn4s1H4urO/XdG6bwJa3BvlGkabV7OoNEqg97Aaoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBRNsmuN3WoK4XvlwXiQxb3aRPDKKS1GTzAa4PGerdixaN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/stephendelorme
+
+==================================================================
