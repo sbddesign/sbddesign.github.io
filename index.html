@@ -14,17 +14,22 @@
 		html, body {
 			font-family: 'Zilla Slab', sans-serif;
 			font-weight: 300;
-			font-size: 1.15rem;
+			/*font-size: 1.15rem;*/
 			height:100%;
+		}
+
+		#main {
+			font-size: 1.15rem;
 		}
 
 		body {
 			margin:0;
-			padding: 0 2rem;
+			/*padding: 0 2rem;*/
 		}
 
-		#main {
-			padding-top: 2rem;
+		.section {
+			padding: 2rem 2rem 0;
+			min-height: 100vh;
 		}
 
 		a {
@@ -41,7 +46,7 @@
 			margin: 0 0 1rem;
 		}
 
-		h1 {
+		#main h1 {
 			font-size: 1.75rem;
 			margin-bottom: 2rem;
 		}
@@ -74,17 +79,41 @@
 			padding-left: 0;
 		}
 
+		.resume-link .fa {
+			padding-right: 0.5rem;
+		}
+
+		.resume-link {
+			padding-right: 1rem;
+		}
+
+		#resume {
+			background: hsl(0, 0%, 98.5%);
+		}
+
+		#resume li {
+			margin-bottom: 0.5rem;
+		}
+
 		@media(min-width:768px) {
 			html, body {
+				font-size: 2vw;
+			}
+
+			#main {
 				font-size: 2.75vw;
 			}
 
 			body {
-				padding: 0 10%;
+				/*padding: 0 10%;*/
+			}
+
+			.section {
+				padding: 4rem 10% 0;
 			}
 
 			#main {
-				padding-top: 0;
+				padding: 0 10%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -100,21 +129,44 @@
 				margin-bottom: 0;
 			}
 
-			h1 {
+			#main h1 {
 				font-size: 4.19vw;
+			}
+
+			.date {
+				font-style: italic;
+				font-weight: normal;
+			}
+
+			.grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.grid > * {
+				padding: 0 2.5rem 2.5rem 0;
 			}
 		}
 
 		@media(min-width:768px) and (orientation: landscape) {
-			html, body {
+			#main {
 				font-size: 2.75vh;
 			}
 
-			h1 {
+			html, body {
+				font-size: 2vh;
+			}
+
+			#main h1 {
 				font-size: 4.19vh;
 			}
 		}
 
+		@media(min-width:768px) and (min-aspect-ratio:13/9) {
+			.grid {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
 	</style>
 	<script src="https://use.fontawesome.com/2547f06612.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -128,7 +180,7 @@
 	</script>
 </head>
 <body>
-	<div id="main">
+	<div id="main" class="section">
 		<h1>
 			I&rsquo;m <span class="logo">Stephen DeLorme.</span><br />
 			Designer. Developer. Filmmaker. Etc.
@@ -136,51 +188,57 @@
 
 		<ul class="icons">
 			<li>
-				<a href="mailto:stephen [at] d.elor.me" target="_blank">
+				<a href="mailto:stephen [at] d.elor.me" target="_blank" title="My email">
 					<i class="fa fa-envelope"></i>
 					<span>Email</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://vimeo.com/stephendelorme" target="_blank">
+				<a href="https://vimeo.com/stephendelorme" target="_blank" title="My Vimeo">
 					<i class="fa fa-vimeo"></i>
 					<span>Vimeo</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://dribbble.com/delorme" target="_blank">
+				<a href="https://dribbble.com/delorme" target="_blank" title="My Dribbble">
 					<i class="fa fa-dribbble"></i>
 					<span>Dribble</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://github.com/sbddesign" target="_blank">
+				<a href="https://github.com/sbddesign" target="_blank" title="My GitHub">
 					<i class="fa fa-github"></i>
 					<span>GitHub</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/stephendelorme/" target="_blank">
+				<a href="https://www.linkedin.com/in/stephendelorme/" target="_blank" title="My LinkedIn">
 					<i class="fa fa-linkedin"></i>
 					<span>LinkedIn</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/stephendelorme/" target="_blank">
+				<a href="https://twitter.com/stephendelorme/" target="_blank" title="My Twitter">
 					<i class="fa fa-twitter"></i>
 					<span>Twitter</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://delorme.blog" target="_blank">
+				<a href="https://delorme.blog" target="_blank" title="My blog">
 					<i class="fa fa-wordpress"></i>
 					<span>WordPress Blog</span>
 				</a>
 			</li>
 			<li>
-				<a href="https://blockchain.info/address/1F9XfcwCF51zgSLGAEGQnwDXFruUHYdfa8" target="_blank">
+				<a href="https://blockchain.info/address/1F9XfcwCF51zgSLGAEGQnwDXFruUHYdfa8" target="_blank" title="My BTC public address">
 					<i class="fa fa-bitcoin"></i>
 					<span>Bitcoin</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://flowcrypt.com/pub/stephen@d.elor.me" target="_blank" title="My PGP public key">
+					<i class="fa fa-lock"></i>
+					<span>PGP Key</span>
 				</a>
 			</li>
 		</ul>
@@ -193,8 +251,147 @@
 			<li>I&rsquo;m a contributor to <a href="https://wordpress.tv" target="_blank">WordPressTV.</a></li>
 		</ol>
 
-		
+		<p>
+			<a href="#resume" class="resume-link"><i class="fa fa-file-text"></i>R&eacute;sum&eacute;</a>
+			<a href="http://delorme.dribbble.com/" target="_blank" class="portfolio-link"><i class="fa fa-book"></i>Portfolio</a>
+		</p>
 	</div>
 
+	<div id="resume" class="section">
+		<h2>R&eacute;sum&eacute;</h2>
+		
+		
+		<div class="grid">
+			<div>
+				<h3>Contact</h3>
+				<p>I&rsquo;m located in <strong>Atlanta, GA</strong>.<br />You can email me at <strong>stephen [at] d.elor.me</strong></p>
+			</div>
+		</div>
+
+		
+		<div class="grid">
+			<div>
+				<h3>Education</h3>
+				<p><strong>Georgia State University, <span class="date">2007 - 2012</span></strong><br />Bachelor of Fine Arts, Graphic&nbsp;Design</p>
+			</div>
+			<div>
+				<h3>Skills</h3>
+				<p>Art Direction, Video Editing &amp; Production, Graphic&nbsp;Design, Web&nbsp;Development</p>
+			</div>
+		</div>
+
+		<h3>Client Experience</h3>
+		<div class="grid">
+			<div>
+				<h4>IBM, <span class="date">2012 - 2018</span></h4>
+				<p>At Superlux, I created videos for IBM to use in many phases of the customer lifecycle, ranging from very early marketing to things like instruction and support. My roles ranged widely from designing and animating to writing and&nbsp;directing.</p>
+
+				<ul>
+					<li>
+						Director<br />
+						<a href="https://superlux.com/work/bluemix-for-gaming/" target="_blank">IBM Bluemix for Gaming
+						</a>
+					</li>
+					<li>
+						Art Director &amp; Animator<br />
+						<a href="https://vimeo.com/225671203" target="_blank">IBM Kenexa
+						</a>
+					</li>
+					<li>
+						Art Director &amp; Animator<br />
+						<a href="https://vimeo.com/225671009" target="_blank">IBM Cloud Brokerage Solutions</a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Benz Research &amp; Development, <span class="date">2012 - 2018</span></h4>
+				<p>At Superlux, I worked on campaigns to educate eye surgeons about Benz lens technology. We used tradeshow graphics to draw attention, and also drove traffic to a website where the surgeons could watch interviews with Benz scientists and&nbsp;engineers.</p>
+
+				<ul>
+					<li>
+						Designer &amp; Animator<br />
+						<a href="https://vimeo.com/250996447" target="_blank">Tradeshow Booth Graphics</a>
+					</li>
+					<li>
+						Developer<br />
+						<a href="https://benz-tv.com" target="_blank">Benz TV Website</a>
+					</li>
+					<li>
+						Art Director<br />
+						<a href="https://benz-tv.com" target="_blank">Benz TV Season 2</a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>ABC Compounding, <span class="date">2009 - 2018</span></h4>
+				<p>I started my design career at ABC. I continue to help them at Superlux, where I have directed many successful campaigns for them, including several website launches and a system to replace product photography with high resolution&nbsp;renders.</p>
+
+				<ul>
+					<li>
+						Art Director<br />
+						<a href="http://progold.superlux.com" target="_blank">ProGold Rebrand &amp; Website</a>
+					</li>
+					<li>
+						Art Director &amp; Lead Developer<br />
+						<a href="http://abccompounding.com" target="_blank">ABC Rebrand &amp; Website</a>
+					</li>
+					<li>
+						Art Director &amp; Lead Developer<br />
+						<a href="http://aero.abccompounding.com" target="_blank">Aero Rebrand &amp; Website</a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Willis Towers Watson, <span class="date">2014 - 2018</span></h4>
+				<p>At Superlux, I helped WTW in building a service that coordinates mass email sends for HR departments. I developed HTML emails, scheduled sends, and provided guidance on complex technical&nbsp;issues.</p>
+
+				<ul>
+					<li>
+						Lead Developer<br />
+						<a href="https://github.com/superluxury/luxmail" target="_blank">HTML Emails</a>
+					</li>
+					<li>
+						Technical Adviser<br />
+						Using IBM Marketing Cloud
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Priority 5, <span class="date">2017 - 2018</span></h4>
+				<p>At Superlux, I worked on a rebranding and a new website to drive sales for Priority 5, a company that develops situational awareness software to aid first&nbsp;responders.</p>
+
+				<ul>
+					<li>
+						Lead Developer<br />
+						<a href="https://priority5.com" target="_blank">Priority 5 Website</a>
+					</li>
+					<li>
+						Art Director<br />
+						<a href="http://priority5-brand.superlux.com" target="_blank">Priority 5 Brand Guidelines</a>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Provenio Technology, <span class="date">2014 - 2018</span></h4>
+				<p>I began working for Provenio Technology as a freelancer and continue to help them at Superlux, where we manage their website and provide brand guidance.</p>
+
+				<ul>
+					<li>
+						Lead Developer<br />
+						<a href="http://proveniotechnology.com" target="_blank">Provenio Technology</a>
+					</li>
+					<li>
+						Art Director<br />
+						<a href="http://provenio.superlux.com" target="_blank">Provenio Brand</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
